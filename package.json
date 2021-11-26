@@ -6,7 +6,9 @@
     "build": "vue-tsc --noEmit && vite build",
     "serve": "vite preview",
     "commit": "cz",
-    "prepare": "npx husky install"
+    "prepare": "npx husky install",
+    "fix": "npx lint-staged -c '.lint-staged-fix'",
+    "fix:eslint": "eslint --fix 'src/**/*.*'"
   },
   "config": {
     "commitizen": {
@@ -15,6 +17,9 @@
   },
   "dependencies": {
     "vue": "^3.2.16"
+  },
+  "lint-staged": {
+    "*.{vue,js,ts,tsx,jsx}": "./node_modules/.bin/eslint"
   },
   "devDependencies": {
     "@commitlint/cli": "^15.0.0",
@@ -26,9 +31,11 @@
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.3.0",
     "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-vue": "^8.1.1",
     "husky": "^7.0.4",
-    "prettier": "2.4.1",
+    "lint-staged": "^12.1.2",
+    "prettier": "^2.5.0",
     "typescript": "^4.4.3",
     "vite": "^2.6.4",
     "vue-eslint-parser": "^8.0.1",

@@ -1,10 +1,11 @@
-module.exports = { // 启用的环境
+module.exports = {
   env: {
+    // 启用的环境
     browser: true,
     es2021: true,
     node: true,
   },
-  parser: 'vue-eslint-parser', // 使用 vue-eslint-parser 解析器
+  parser: 'vue-eslint-parser', // 增加 vue 解析器
   parserOptions: {
     // eslint espree (查时候看 eslint 文档)
     parser: '@typescript-eslint/parser', // 解析器
@@ -15,12 +16,10 @@ module.exports = { // 启用的环境
     },
   },
   extends: [
-    'plugin:vue/vue3-recommended', // 强制执行 vue3 社区默认值的规则
-    'plugin:@typescript-eslint/recommended', // 校验 ts
-    'prettier', // 利用 prettier 配置 覆盖 eslint 样式配置
+    'plugin:vue/vue3-recommended', // vue 风格
+    'plugin:@typescript-eslint/recommended', // ts 风格
+    'plugin:prettier/recommended',
   ],
-  plugins: ['vue', '@typescript-eslint'],
-  rules: {
-    // 'vue/script-setup-uses-vars': 'error',  // 中使用的变量<template>被no-unused-vars规则警告
-  },
+  plugins: ['vue', '@typescript-eslint'], // 插件包
+  rules: {},
 };

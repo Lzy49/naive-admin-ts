@@ -8,7 +8,7 @@
     "commit": "cz",
     "prepare": "npx husky install",
     "fix": "npx lint-staged -c '.lint-staged-fix'",
-    "fix:eslint": "eslint --fix 'src/**/*.*'"
+    "fix:eslint": "eslint --fix 'src/**/*.{js,jsx,ts,tsx,vue}'"
   },
   "config": {
     "commitizen": {

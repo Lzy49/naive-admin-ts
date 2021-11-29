@@ -1,20 +1,6 @@
-# 应用
 
-- naive-ui
-- axios
-- vicons
-# 开发
-
-- sass 
-- ts
-# 风格
-
-- eslint
-- parser
 ## Git
-
 ### 工具
-
 ##### 风格工具
 
 - commitizen  // Git 规则 工具

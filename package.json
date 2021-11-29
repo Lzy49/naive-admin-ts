@@ -16,6 +16,7 @@
     }
   },
   "dependencies": {
+    "axios": "^0.24.0",
     "vue": "^3.2.16"
   },
   "lint-staged": {
@@ -36,6 +37,7 @@
     "husky": "^7.0.4",
     "lint-staged": "^12.1.2",
     "prettier": "^2.5.0",
+    "sass": "^1.43.5",
     "typescript": "^4.4.3",
     "vite": "^2.6.4",
     "vue-eslint-parser": "^8.0.1",
